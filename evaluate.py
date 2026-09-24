@@ -45,6 +45,7 @@ def main():
     p.add_argument("--sigma", type=float, default=7)
     p.add_argument("--weight-method", choices=["rgb", "patch"], default="rgb")
     p.add_argument("--n-seeds", type=int, default=12, help="disques de seeds par classe")
+    p.add_argument("--thresh", type=float, default=0.9, help="seuil de confiance des graines")
     p.add_argument("--skip-rw", action="store_true", help="n'évaluer que le CNN (rapide)")
     p.add_argument("--data-root", default="data/pets")
     p.add_argument("--out", default="results/evaluation.csv")
@@ -61,10 +62,22 @@ def main():
         image, _, gt = val_set[k]
         gt = gt.numpy().astype(bool)
         fg, bg = predict_probs(model, image)
-        row = {"index": k, "iou_cnn": iou(fg > bg, gt), "dice_cnn": dice(fg > bg, gt)}
+        row = {"index": k, "iou_cnn": iou(fg > bg, gt), "dice_cnn": dice(fg > bg, gt),
+               # Référence naïve : tout prédire « chat »
+               "iou_baseline": iou(np.ones_like(gt), gt)}
+
+        # Le CNN sert à placer des graines : ce qui compte, c'est qu'il ne se trompe pas
+        # là où il est confiant (proba > seuil), pas qu'il segmente bien partout.
+        conf_fg, conf_bg = fg > args.thresh, bg > args.thresh
+        if conf_fg.any():
+            row["precision_seeds_fg"] = gt[conf_fg].mean()
+        if conf_bg.any():
+            row["precision_seeds_bg"] = (~gt[conf_bg]).mean()
+        row["couverture_confiante"] = (conf_fg | conf_bg).mean()
 
         if not args.skip_rw:
-            seeds = get_limited_seeds(fg, bg, n_fg=args.n_seeds, n_bg=args.n_seeds, rng=rng)
+            seeds = get_limited_seeds(fg, bg, n_fg=args.n_seeds, n_bg=args.n_seeds, rng=rng,
+                                      fg_thresh=args.thresh, bg_thresh=args.thresh)
             if seeds:
                 pil = Image.fromarray((image.permute(1, 2, 0).numpy() * 255).astype(np.uint8))
                 rw = RandomWalkerSegmentation(seeds, pil, *gt.shape, max_steps=args.max_steps,
@@ -88,7 +101,8 @@ def main():
         w.writerows(rows)
 
     print("\n=== Moyennes ===")
-    for key in ("iou_cnn", "dice_cnn", "iou_rw", "dice_rw", "time_rw"):
+    for key in ("iou_baseline", "iou_cnn", "dice_cnn", "precision_seeds_fg", "precision_seeds_bg",
+                "couverture_confiante", "iou_rw", "dice_rw", "time_rw"):
         vals = [r[key] for r in rows if key in r]
         if vals:
             print(f"{key:>9} : {np.mean(vals):.3f}  (médiane {np.median(vals):.3f}, n={len(vals)})")
