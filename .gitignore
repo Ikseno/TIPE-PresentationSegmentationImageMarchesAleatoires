@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Dataset téléchargé automatiquement par torchvision (~800 Mo)
+data/pets/
+
+# Sorties temporaires
+results/segmented_image.png
+results/evaluation.csv
+*.pickle
+
+# Checkpoints intermédiaires (seul models/seednet_final.pth est versionné)
+models/seednet_session*.pth

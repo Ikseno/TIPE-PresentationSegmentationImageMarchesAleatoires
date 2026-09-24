@@ -1,0 +1,57 @@
+2025-06-04T21:49:31.254039 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 1000 Nb convergentes : 62576 | Time: 3.9098 seconds
+2025-06-04T21:51:19.505221 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 5000 Nb convergentes : 63151 | Time: 11.4478 seconds
+2025-06-04T21:52:50.784314 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 10000 Nb convergentes : 63316 | Time: 19.5370 seconds
+2025-06-04T21:54:47.412317 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 15000 Nb convergentes : 63443 | Time: 27.3990 seconds
+2025-06-04T21:56:38.996832 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 20000 Nb convergentes : 63489 | Time: 34.0163 seconds
+2025-06-04T21:59:36.940733 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 30000 Nb convergentes : 63557 | Time: 46.5129 seconds
+2025-06-04T22:01:58.113828 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 40000 Nb convergentes : 63600 | Time: 61.0582 seconds
+2025-06-04T22:05:22.589357 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 50000 Nb convergentes : 63624 | Time: 71.4363 seconds
+2025-06-04T22:08:56.476739 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 75000 Nb convergentes : 63706 | Time: 102.7788 seconds
+2025-06-04T22:12:56.703573 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 100000 Nb convergentes : 63768 | Time: 123.4915 seconds
+2025-06-04T22:15:19.683796 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 500 Nb convergentes : 62170 | Time: 2.6211 seconds
+2025-06-04T22:16:31.388549 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 100 Nb convergentes : 60620 | Time: 1.4826 seconds
+2025-06-04T22:17:25.791640 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 50 Nb convergentes : 59275 | Time: 1.4330 seconds
+2025-06-04T22:56:31.831823 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 2500 Nb convergentes : 62923 | Time: 7.1399 seconds
+
+
+
+Max pas : 50 Nb convergentes : 59,275
+Max pas : 100 Nb convergentes : 60,620
+Max pas : 500 Nb convergentes : 62,170 
+Max pas : 1,000 Nb convergentes : 62,576
+Max pas : 5,000 Nb convergentes : 63,151
+Max pas : 10,000 Nb convergentes : 63,316
+Max pas : 15,000 Nb convergentes : 63,443 
+Max pas : 20,000 Nb convergentes : 63,489
+Max pas : 30,000 Nb convergentes : 63,557
+Max pas : 40,000 Nb convergentes : 63,600
+Max pas : 50,000 Nb convergentes : 63,624 
+Max pas : 75,000 Nb convergentes : 63,706 
+Max pas : 100,000 Nb convergentes : 63,768 2025-06-04T23:50:46.254377 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 30000 Nb convergentes : 64298 | Time: 19.2319 seconds
+2025-06-04T23:52:08.590687 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 30000 Nb convergentes : 64701 | Time: 1.7293 seconds
+2025-06-04T23:53:10.513549 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 30000 Nb convergentes : 64677 | Time: 3.1862 seconds
+2025-06-04T23:57:15.667220 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 50000 Nb convergentes : 64687 | Time: 3.4643 seconds
+2025-06-04T23:58:18.144638 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 50000 Nb convergentes : 64698 | Time: 2.5229 seconds
+2025-06-04T23:59:07.948694 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 50000 Nb convergentes : 64688 | Time: 3.4000 seconds
+2025-06-05T00:00:49.231448 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 80000 Nb convergentes : 64690 | Time: 4.0209 seconds
+2025-06-05T00:01:44.945622 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 80000 Nb convergentes : 64703 | Time: 1.8312 seconds
+2025-06-05T00:02:35.673949 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 80000 Nb convergentes : 64743 | Time: 3.1420 seconds
+2025-06-05T00:05:18.752657 | Image: /home/ikseno/python_coding/tipe/images_test/cameleon.jpg | Max marches : 80000 Nb convergentes : 63775 | Time: 100.7497 seconds
+2025-06-05T00:06:37.804002 | Image: /home/ikseno/python_coding/tipe/images_test/cat5.jpg | Max marches : 30000 Nb convergentes : 63993 | Time: 31.2964 seconds
+2025-06-05T00:10:07.095590 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 30000 Nb convergentes : 64684 | Time: 11.0220 seconds
+2025-06-05T00:12:26.123691 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 30000 Nb convergentes : 64688 | Time: 12.7405 seconds
+2025-06-05T00:14:44.478182 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 30000 Nb convergentes : 63337 | Time: 67.4415 seconds
+2025-06-05T00:20:29.277894 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 30000 Nb convergentes : 64154 | Time: 37.0198 seconds
+2025-06-05T00:22:30.225368 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 30000 Nb convergentes : 64669 | Time: 11.2154 seconds
+2025-06-05T00:24:37.315627 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 50000 Nb convergentes : 64268 | Time: 44.4768 seconds
+2025-06-05T00:26:38.750329 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 50000 Nb convergentes : 64505 | Time: 27.9299 seconds
+2025-06-05T00:28:30.688154 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 50000 Nb convergentes : 64578 | Time: 22.6955 seconds
+2025-06-05T00:30:37.953496 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 80000 Nb convergentes : 64515 | Time: 40.9701 seconds
+2025-06-05T00:32:02.521700 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 80000 Nb convergentes : 64427 | Time: 40.4228 seconds
+2025-06-05T00:34:14.492900 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 30000 Nb convergentes : 64598 | Time: 12.3198 seconds
+2025-06-05T00:37:01.229646 | Image: /home/ikseno/python_coding/tipe/images_test/cat65.jpg | Max marches : 30000 Nb convergentes : 63299 | Time: 64.9283 seconds
+2025-06-05T10:40:38.107829 | Image: /home/ikseno/python_coding/tipe/cat25.jpg | Max marches : 30000 Nb convergentes : 64823 | Time: 3.6797 seconds
+2025-06-05T13:17:31.648307 | Image: /home/ikseno/python_coding/tipe/cat60.jpg | Max marches : 30000 Nb convergentes : 64460 | Time: 19.2002 seconds
+2025-06-05T13:25:34.382473 | Image: /home/ikseno/python_coding/tipe/cat32.jpg | Max marches : 30000 Nb convergentes : 64579 | Time: 13.7533 seconds
+2025-06-05T13:27:15.416481 | Image: /home/ikseno/python_coding/tipe/cat32.jpg | Max marches : 40000 Nb convergentes : 64465 | Time: 23.4171 seconds
+2025-06-05T13:32:46.121758 | Image: /home/ikseno/python_coding/tipe/cat25.jpg | Max marches : 40000 Nb convergentes : 60463 | Time: 229.0188 seconds
